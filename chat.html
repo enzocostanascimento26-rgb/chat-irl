@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget de Chat Streamlabs</title>
+    <style>
+        body {
+            /* Fundo da página transparente para ver o jogo/transmissão */
+            background-color: transparent;
+            margin: 0;
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+        
+        #chat-container {
+            /* Posiciona o chat no canto superior direito */
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            /* Define a largura e altura */
+            width: 500px;
+            height: 100vh; /* 100% da altura da tela */
+            
+            /* Garantir que o chat apareça acima de outros elementos */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <iframe 
+            src="https://streamlabs.com/widgets/chat-box/v1/8C20917B9F3688554DBE6A8B52B3B76611CE49C5B91631B0675EB8600AF1637165903106CE5B5124786377FC425C464A38537C4073C321E0A90E5C7C9613C80476461C67E3E2623350EBEB1E139980BA010837B648998E5CC1526FA144C7C98249E01A1A1D71F22EB99F771954854F6801EBA8346EF3DDA45CE503F73D" 
+            frameborder="0" 
+            width="100%" 
+            height="100%">
+        </iframe>
+    </div>
+</body>
+</html>
